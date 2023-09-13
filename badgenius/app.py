@@ -3,8 +3,7 @@ def reduce_to_20_characters(original):
         'aa': 'A', 'ab': 'B', 'ac': 'C', 'ad': 'D',
         'ba': 'E', 'bb': 'F', 'bc': 'G', 'bd': 'H',
         'ca': 'I', 'cb': 'J', 'cc': 'K', 'cd': 'L',
-        'da': 'M', 'db': 'N', 'dc': 'O', 'dd': 'P',
-        'ea': 'Q', 'eb': 'R', 'ec': 'S', 'ed': 'T'
+        'da': 'M', 'db': 'N', 'dc': 'O', 'dd': 'P'
     }
     reduced = ''
 
@@ -21,8 +20,7 @@ def convert_to_original(reduced):
         'A': 'aa', 'B': 'ab', 'C': 'ac', 'D': 'ad',
         'E': 'ba', 'F': 'bb', 'G': 'bc', 'H': 'bd',
         'I': 'ca', 'J': 'cb', 'K': 'cc', 'L': 'cd',
-        'M': 'da', 'N': 'db', 'O': 'dc', 'P': 'dd',
-        'Q': 'ea', 'R': 'eb', 'S': 'ec', 'T': 'ed'
+        'M': 'da', 'N': 'db', 'O': 'dc', 'P': 'dd'
     }
     original = ''
 
@@ -33,9 +31,9 @@ def convert_to_original(reduced):
     return original
 
 
-# Example usage:
+# Example:
 def run():
-    original_text = "aabcdaadbaccedeaebcc"
+    original_text = "dacbbcaddcddcbbb"
     reduced_text = reduce_to_20_characters(original_text)
     converted_text = convert_to_original(reduced_text)
 
